@@ -188,9 +188,35 @@ html {
   max-width: 1180px;
   margin: 0 auto;
   width: 90%;
+  border: solid 1px red;
 }
 
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+header {
+  background: blue;
+  height: 50vh;
+}
+
+.questionOne {
+  background: orange;
+  height: 50vh;
+}
+
+.questionTwo {
+  background: green;
+  height: 50vh;
+}
+
+.questionThree {
+  background: pink;
+  height: 50vh;
+}
+
+.results {
+  background: rebeccapurple;
+  height: 50vh;
 }
