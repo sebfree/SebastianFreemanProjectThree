@@ -10,50 +10,89 @@
 
         // set up all listeners here
 
-        const myApp = {};
-        myApp.wrestlerNames = ["The Jabrone", "Holay Molay", "Masked Kitten", "Big Baby"];
+        const myApp = {
+            question: 0,
+            score: 0
+        };
+        myApp.wrestlerNames = ["The Jabrone", "Holay Molay", "Masked Kitten"];
         
 
         // listen for a form submit event
-	    myApp.formSubmit = function () {
             $(`form`).on(`submit`, function(event){
-        // prevent default form submission
-		    event.preventDefault();
+                // prevents form from refreshing
+                event.preventDefault();
+                //  set variable that checks which input user selected
+                let value = $(`input:checked`).val();
+                // set user score to a number (it defaults to a string)
+                myApp.score = myApp.score + Number(value);
+                // increment question e.g. skips to next question
+                myApp.question++;
+
+                // inject question + answers to screen
+                // updateQuestion();
             });
-        }
 
+            const updateQuestion = function () {
+                $(`#question`).text(questions[0]);
+            }
 
-        // store user answers to variables
-        let userTrueAnswer = $(`input[name="true"]:checked`).val();
-        let userFalseAnswer = $(`input[name="false"]:checked`).val();
-        
-        userTrueAnswer === 2;
-        userFalseAnswer === 1;
+            // updateQuestion();
 
-        const totalScore = userTrueAnswer + userFalseAnswer;
+        const questions = [
+            { 
+                question: "Are you a hardcore wrestling champion???",
+                answer1: "Hell yeah!",
+                answer2: "Uh, no man. Stop yelling."
+             },
+             
+            { 
+                question: "Are you a hardcore wrestling champion???",
+                answer1: "Hell yeah!",
+                answer2: "Uh, no man. Stop yelling."
+             },
+             
+            { 
+                question: "Are you a hardcore wrestling champion???",
+                answer1: "Hell yeah!",
+                answer2: "Uh, no man. Stop yelling."
+             }
+        ];
 
-        myApp.assignName = function () {
-            if (totalScore === 3) {
-                console.log(myApp.wrestlerNames[0]);
-            } else if (totalScore === 4) {
-                return myApp.wrestlerNames[1];
-            } else if (totalScore === 5) {
-                return myApp.wrestlerNames[2];
-            } else {
-                return myApp.wrestlerNames[3];
-            } 
+        // myApp.assignName = function () {
+        //     return myApp.wrestlerNames[totalScore % 3]
+        // //     switch (totalScore) {
+        //         case 0:
+        //             jkdhfiewf
+        //             return myApp.wrestlerNames[0]
+        //             break;
+        //         case totalScore < 4:
+        //             return myApp.wrestlerNames[1]
+        //             // break;
+        //         case 2:
+        //             return myApp.wrestlerNames[2]
+        //             // break;
+        //   }
+        //     if (totalScore === 3) {
+        //         console.log(myApp.wrestlerNames[0]);
+        //     } else if (totalScore === 4) {
+        //         return myApp.wrestlerNames[1];
+        //     } else if (totalScore === 5) {
+        //         return myApp.wrestlerNames[2];
+        //     } else {
+        //         return myApp.wrestlerNames[3];
+        //     } 
             
-        }
+        // }
 
         myApp.init = function(){
-            myApp.formSubmit();
-            myApp.assignName();
+            // myApp.formSubmit();
+            // myApp.assignName();
             // myApp.totalScore();
         }
 
 // document ready - load all jquery content on page
         $(function(){
-            myApp.init();
+            // myApp.init();
 
 
         });
