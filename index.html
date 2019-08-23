@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>WrestleNamia</title>
 </head>
+
 <body>
 
-    <header>
+    <!-- <header>
         <div class="wrapper">
             <div class="headerImage">
                 <img src="" alt="">
@@ -22,23 +24,23 @@
                 <button>Let's go, Bay Bay!!!</button>
             </div>
         </div>
-    </header>
+    </header> -->
 
-   
 
-    <section class="questionOne">
+
+    <!-- <section class="questionOne">
 
         <div class="wrapper">
             <form action="">
                 <fieldset>
                     <p id="question"></p>
-                    <label id="answer1">
-                        <input type="radio" name="wrestler" value="0">
+                    <label id="answer1">True
+                        <input type="radio" name="wrestler1" value="0">
                     </label>
-                    <label id="answer2">
-                        <input type="radio" name="wrestler" value=="1">
+                    <label id="answer2">False
+                        <input type="radio" name="wrestler2" value="1">
                     </label>
-                    <div class="submitContainer3">
+                    <div class="submitContainer">
                         <input type="submit" value="submit">
                     </div>
                  </fieldset>
@@ -46,12 +48,48 @@
         </div>
         
         
+    </section> -->
+
+    <form action="">
+        <fieldset class="question1">
+            <p>You a champ?</p>
+            <label for="true">Yeah</label>
+            <input type="radio" name="answer1" id="true" value="1">
+            <label for="false">Nah</label>
+            <input type="radio" name="answer2" id="false" value="0">
+            <div class="submit-container">
+                <input type="submit" value="ONE!">
+            </div>
+        </fieldset>
+        <fieldset class="question2">
+            <p>Is it batman</p>
+            <label for="true">Yeah</label>
+            <input type="radio" name="answer1" id="true" value="1">
+            <label for="false">Nah</label>
+            <input type="radio" name="answer2" id="false" value="0">
+            <div class="submit-container">
+                <input type="submit" value="TWO!">
+            </div>
+        </fieldset>
+        <fieldset class="question3">
+            <p>for whom the bell tolls?</p>
+            <label for="true">Yeah</label>
+            <input type="radio" name="answer1" id="true" value="1">
+            <label for="false">Nah</label>
+            <input type="radio" name="answer2" id="false" value="0">
+            <div class="submit-container">
+                <input type="submit" value="THREE!">
+            </div>
+        </fieldset>
+    </form>
+    <section class="results">
     </section>
 
-        
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
