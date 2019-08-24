@@ -8,86 +8,74 @@
 // •	1 array, 3 names
 // •	Tabulate score based on user answers (e.g. user gets 2 points for true answer, and so on)
 
-// const questions = [
-//     {
-//         question: "Are you a hardcore wrestling champion???",
-//         answer1: "Hell yeah!",
-//         answer2: "Uh, no man. Stop yelling."
-//     },
-
-//     {
-//         question: "is it batman",
-//         answer1: "Hell yeah!",
-//         answer2: "Uh, no man. Stop yelling."
-//     },
-
-//     {
-//         question: "wee oo weeeooooo",
-//         answer1: "Hell yeah!",
-//         answer2: "Uh, no man. Stop yelling."
-//     }
-// ];
+// const myApp = {};
+// myApp.wrestlerNames = ["The Jabrone", "Holay Molay", "Masked Kitten"];
+// myApp.score = myApp.score + (radioValue) + (radioValue1) + (radioValue2);
 
 
-const myApp = {
-    question: 0,
-    score: 0
-};
-myApp.wrestlerNames = ["The Jabrone", "Holay Molay", "Masked Kitten"];
-
-
-// listen for a form submit event
-$(`form`).on(`submit`, function (event) {
-    // prevents form from refreshing
-    event.preventDefault();
-    //  set variable that checks which input user selected
-    let value = $(`input:checked`).val();
-    // const userTrue = $(`input[name="answer1"]:checked`).val();
-	// const userFalse = $(`input[name="answer2"]:checked`).val();
-    // set user score to a number (it defaults to a string)
-    myApp.score = myApp.score + Number(value);
-    console.log(value)
-    // increment question e.g. skips to next question
-    // myApp.question++;
-
-    // inject question + answers to screen
-
-    
-});
-
-// const updateQuestion = function () {
-//     $(`#question`).text(questions[0]["question"]);
-    // $(`#answer1`).text(questions[0]["answer1"]);
-    // $(`#answer2`).text(questions[0]["answer2"]);
-
-    // updateQuestion()
-
-
-    const getWrestlerName = function () {
-        if (myApp.score >= 5) {
-            return (myApp.wrestlerNames[0]);
-        } else if (myApp.score >= 3) {
-            return myApp.wrestlerNames[1];
-        } else {
-            return myApp.wrestlerNames[2];
-        } 
-}
-
-// getWrestlerName();
-
-$(`.results`).html(`<h2 class="Your name is">${getWrestlerName()}</h2>`)
-
-myApp.init = function () {
+// myApp.init = function () {
     // myApp.getWrestlerName();
     // myApp.assignName();
     // myApp.totalScore();
-}
+// }
 
 // document ready - load all jquery content on page
-$(function () {
+// $(document).on('page:change', function(){
+$(function() {
+    // myApp.radioValues();
     // myApp.init();
+
+    // $(`form`).on(`submit`, function(event){
+    //     event.preventDefault();
+
+
+
+    // $(`fieldset`).on(`submit`, function(event){
+    //     event.preventDefault();
+    
+    // })
+
+// const myApp = {};
+
+
+
+// console.log(myScore);
+
+    // console.log(getWrestlerName());
 
 
 });
+
+$(`form`).on(`submit`, function(event){
+    event.preventDefault();
+
+    // const userFinalScore = function () {
+        const radioValue = $(`input[name="answer"]:checked`).val();
+        console.log(radioValue);
+        const radioValue1 = $(`input[name="answer1"]:checked`).val();
+        console.log(radioValue1);
+        const radioValue2 = $(`input[name="answer2"]:checked`).val();
+        console.log(radioValue2);
+        const myScore = parseFloat(radioValue) + parseFloat(radioValue1) + parseFloat(radioValue2);
+        console.log(myScore);
+    // };
+
+    const wrestlerNames = ["The Jabrone", "Holay Molay", "Masked Kitten"];
+
+    getWrestlerName = function (){
+        if (myScore >= 5) {
+            return (wrestlerNames[0]);
+        } else if (myScore > 3) {
+            return wrestlerNames[1];
+        } else if (myScore <= 3){
+            return wrestlerNames[2];
+        } 
+
+    }
+
+    $(`.results`).html(`<h2 class="Your name is">${getWrestlerName()}</h2>`)
+
+});
+
 
 

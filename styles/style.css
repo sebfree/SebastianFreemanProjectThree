@@ -189,6 +189,16 @@ html {
   margin: 0 auto;
   width: 90%;
   border: solid 1px red;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 img {
@@ -196,27 +206,14 @@ img {
   max-height: 100%;
 }
 
-header {
-  background: blue;
-  height: 50vh;
+main {
+  background-color: #39ff14;
 }
 
-.questionOne {
-  background: orange;
-  height: 50vh;
-}
-
-.questionTwo {
-  background: green;
-  height: 50vh;
-}
-
-.questionThree {
-  background: pink;
-  height: 50vh;
-}
-
-.results {
-  background: rebeccapurple;
-  height: 50vh;
+form {
+  background-color: #ccff00;
+  text-align: left;
+  width: 40%;
+  height: 75vh;
+  border-radius: 10px;
 }

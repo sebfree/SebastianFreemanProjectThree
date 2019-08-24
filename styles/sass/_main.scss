@@ -1,26 +1,28 @@
-header {
-    background: blue;
-    height: 50vh;
+
+
+main {
+    background-color: #39ff14;
 }
 
-.questionOne {
-    background: orange;
-    height: 50vh;
+form {
+    background-color: #ccff00; 
+    text-align: left;
+    width: 40%;
+    height: 75vh;
+    border-radius: 10px;
+    // margin:  0 auto;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 }
 
-.questionTwo {
-    background: green;
-    height: 50vh;
 
-}
 
-.questionThree {
-    background: pink;
-    height: 50vh;
 
-}
 
-.results {
-    background: rebeccapurple;
-    height: 50vh;
-}
+// .results {
+//     // background: rebeccapurple;
+//     height: 20%;
+//     // visibility: hidden;
+// }
+
