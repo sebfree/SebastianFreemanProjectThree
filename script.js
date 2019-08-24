@@ -22,6 +22,9 @@
 // document ready - load all jquery content on page
 // $(document).on('page:change', function(){
 $(function() {
+
+  
+
     // myApp.radioValues();
     // myApp.init();
 
@@ -46,10 +49,15 @@ $(function() {
 
 });
 
+
+// Listen to for submit
+
 $(`form`).on(`submit`, function(event){
     event.preventDefault();
 
-    // const userFinalScore = function () {
+// Calculate user score based on selection
+
+
         const radioValue = $(`input[name="answer"]:checked`).val();
         console.log(radioValue);
         const radioValue1 = $(`input[name="answer1"]:checked`).val();
@@ -58,9 +66,11 @@ $(`form`).on(`submit`, function(event){
         console.log(radioValue2);
         const myScore = parseFloat(radioValue) + parseFloat(radioValue1) + parseFloat(radioValue2);
         console.log(myScore);
-    // };
 
-    const wrestlerNames = ["The Jabrone", "Holay Molay", "Masked Kitten"];
+
+    // logic to determine name
+
+    const wrestlerNames = ["The Jabrone", "Beast From Within", "Masked Kitten"];
 
     getWrestlerName = function (){
         if (myScore >= 5) {
@@ -73,9 +83,24 @@ $(`form`).on(`submit`, function(event){
 
     }
 
-    $(`.results`).html(`<h2 class="Your name is">${getWrestlerName()}</h2>`)
+    // inject answer to screen
 
-});
+    $(`.results`).html(`<h2 class="Your name is">Your name is ${getWrestlerName()}</h2>`)
+
+    // inject error message to screen if no buttons selected
+
+
+        error = function () {
+            if ((`input[name="answer"]:checked`), false);  {
+            $(`.results`).html(`<h2 class="error">Click the buttons, ya jabrone!</h2>`)
+        };
+   error();
+
+};
+
+// clear radio button upon refresh
+
+$('input[type="radio"]').prop('checked', false); 
 
 
 

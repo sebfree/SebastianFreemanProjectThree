@@ -18,18 +18,42 @@ main {
     height: 80vh;
     padding-top: 130px;
     // position: relative;
-    
-    
-
-    
-
-
-
 }
+
+// h1glow effect
+
+.headerTitle {
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+    // padding-bottom: 20px;
+  }
+
+  h1 {
+
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+  
+//    0 0 100px #0310ea, 0 0 150px #0310ea
+
+//   0 0 50px #0310ea, 0 0 75px #0310ea;
+    @-webkit-keyframes neon1 {
+        from {
+          text-shadow: 0 0 10px #7fff00, 0 0 20px #7fff00, 0 0 30px #7fff00, 0 0 40px #0310ea, 0 0 70px #0310ea, 0 0 80px #0310ea;
+        }
+        to {
+          text-shadow: 0 0 5px #7fff00, 0 0 10px #7fff00, 0 0 15px #7fff00, 0 0 20px #0310ea, 0 0 35px #0310ea,0 0 40px #0310ea;
+        }
+      }
+
+
 
 // form stylez
 
-form {
+form { 
+    // position: relative;
     font-family: 'Caveat Brush', cursive;
     color: #0310ea; 
     text-transform: uppercase;
@@ -39,6 +63,7 @@ form {
     height: 50vh;
     border-radius: 10px;
     padding-top: 20px;
+    box-shadow: 0 0 15px 20px;
     // position: relative;
     // margin:  0 auto;
    
@@ -50,14 +75,14 @@ fieldset {
 }
 
 .legendDiv {
-    font-size: 2.5rem;
+    font-size: 3rem;
     letter-spacing: 1px;
     text-align: center;
 
 }
 
 .answerDiv {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 
@@ -72,21 +97,26 @@ fieldset {
 
 // center header text
 
-.headerTitle {
+.headerCopy {
     text-align: center;
 }
 
 // image stylez
 
 .image1 {
-    width: 35%;
+    width: 30%;
     height: 55%;
     position: absolute;
     right: 0px;
     bottom: 0px;
+    // img {
+    //     box-shadow: 0 0 15px 20px;
+    //     color: #fcf340;
+    
+    
 }
 .image2 {
-    width: 50%;
+    width: 25%;
     height: 50%;
     position: absolute;
     left: 200px;
@@ -94,7 +124,7 @@ fieldset {
 }
 
 .image3 {
-    width: 50%;
+    width: 25%;
     height: 55%;
     position: absolute;
     left: 200px;
@@ -110,21 +140,49 @@ fieldset {
 }
 
 .image5 {
-    width: 32%;
+    width: 35%;
     height: 55%;
     position: absolute;
     right: 0px;
     top: 0px;
 }
 
+// button stylez
 
 
+    input[type=submit] {
+        font-size: 2rem;
+        background: #7fff00;
+        padding: 5px 15px;
+        border-radius: 15px;
+        color: #0310ea;
+        box-shadow: 5px 5px;
 
+}
+          
+    input[type=submit]:hover {
+        box-shadow: 0 0 8px 10px;
+        transition: all 1s;
 
+}
 
-// .results {
-//     // background: rebeccapurple;
-//     height: 20%;
-//     // visibility: hidden;
-// }
+// results container
+
+.results h2 {
+    // position: absolute;
+    font-size: 3rem;
+    margin: 0 auto;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    background: #fcf340;
+    color: #0310ea;
+    font-family: 'Caveat Brush', cursive;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 20px;
+    margin-top: 30px;
+    
+
+    // height: 100%;
+}
 
