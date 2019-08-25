@@ -41,7 +41,7 @@ $(`form`).on(`submit`, function(event){
         const myScore = parseFloat(radioValue) + parseFloat(radioValue1) + parseFloat(radioValue2);
 
     // names array
-    const wrestlerNames = ["your name is The Jabrone", "your name is Holay Molay", "your name is Masked Kitten", "your name is Todd Alpain", "Error: Answer the Questions!"];
+    const wrestlerNames = ["your name is The Jabrone", "your name is Colonel Crunch", "your name is Masked Kitten", "your name is Todd Alpain", "Error: Answer the Questions!"];
 
     // name generator logic
 
