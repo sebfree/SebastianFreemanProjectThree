@@ -4,6 +4,7 @@
 main, header {
     background-color: #fb33db;
     position: relative;
+    // overflow:hidden;
 }
 
 header {
@@ -12,11 +13,14 @@ header {
     padding-top: 40px;
     z-index: 999;
 
+
 }
 
 main {
     height: 80vh;
     padding-top: 130px;
+    overflow:hidden;
+
     // padding-bottom: 5px;
 
 }
@@ -59,7 +63,7 @@ form {
     width: 40%;
     height: 50vh;
     border-radius: 10px;
-    padding-top: 20px;
+    padding-top: 10px;
     box-shadow: 0 0 15px 20px;
 
 
@@ -149,6 +153,7 @@ fieldset {
         border-radius: 15px;
         color: #0310ea;
         box-shadow: 5px 5px;
+        margin-top: 5px;
 
 }
           
@@ -178,7 +183,7 @@ footer {
     font-size: 1.5rem;
     font-family: 'Caveat Brush', cursive;
     color: #7fff00;
-    padding-top: 75px;
+    padding: 50px 0 0 10px;
 
 }
 

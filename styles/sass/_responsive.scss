@@ -1,0 +1,264 @@
+@media (max-width: 1450px) {
+
+ // reposition wrestlers
+    
+    .image3 {
+        left: 150px;
+        top: 30px;
+    }
+
+    .image2 {
+        left: 175px;
+        bottom: 0px;
+    }
+
+}
+
+@media (max-width: 1380px) {
+
+ // reposition wrestlers
+    
+    .image3 {
+        left: 100px;
+        top: 30px;
+    }
+
+    .image2 {
+        left: 150px;
+        bottom: 0px;
+    }
+
+}
+
+
+@media (max-width: 1120px) {
+
+// font-size adjustments
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    .results h2 {
+        font-size: 2.5rem;
+    }
+
+    // wrestler image adjusments
+    
+    .image3 {
+        width: 28%;
+        height: 55%;
+        left: 50px;
+        top: 30px;
+    }
+
+    
+
+    .image2 {
+        left: 100px;
+        bottom: 0px;
+    }
+
+}
+
+@media (max-width: 980px) {
+
+    // font-size adjustments
+    
+    h2 {
+        font-size: 3rem;
+}
+    
+    // wrestler image adjustments
+
+    .image3 {
+        width: 30%;
+        height: 55%;
+        left: 20px;
+        top: 30px;
+}
+    
+        
+    
+    .image2 {
+        left: 50px;
+        bottom: 0px;
+}
+
+// make form bigger
+
+    form {
+        width: 55%;
+    }
+    
+
+
+}
+
+    @media (max-width: 841px) {
+
+// reduce header font
+
+    h1 {
+        font-size: 7rem
+}
+
+    h2 {
+        font-size: 2.7rem;
+}
+
+// reduce form fonts
+    
+
+    .legendDiv {
+        font-size: 2.8rem;
+        
+}
+        
+    .answerDiv {
+        font-size: 1.8rem;
+}
+
+
+
+}
+
+@media (max-width: 800px) {
+
+    // reduce result font
+
+
+    .results h2 {
+        font-size: 1.8rem;
+    }
+
+  // reposition wrestlers
+    .image3 {
+        width: 30%;
+        left: 0px;
+        top: 30px;
+    }
+
+    
+
+    .image2 {
+        left: 25px;
+        bottom: 0px;
+    }
+}
+
+@media (max-width: 715px) {
+
+    // reduce header font
+
+    h1 {
+        font-size: 5rem
+
+    }
+
+    // adjust form size
+
+    form {
+
+        width: 60%;
+    }
+    
+
+}
+
+@media (max-width: 650px) {
+
+  // reposition wrestlers
+
+    .image2 {
+        height: 35%;
+    }
+
+    .image1 {
+        height: 40%;
+    }
+    
+}
+
+
+ @media (max-width: 570px) {
+
+    // adjust form size
+
+    form {
+        width: 75%;
+
+    }
+
+    
+}
+
+@media (max-width: 515px) {
+
+    // adjust header fonts
+
+    h1 {
+        font-size: 3.8rem
+
+    }
+
+    h2 {
+        font-size: 2.2rem;
+}
+
+// reduce form fonts
+    
+
+    .legendDiv {
+        font-size: 2.5rem;
+        
+    }
+
+ // reposition wrestlers
+
+    .image2 {
+        height: 31%;
+        left: 0;
+    }
+
+    .image1 {
+        height: 35%;
+    }
+
+    // adjjust form size 
+
+    form {
+        width: 90%;
+    }
+    
+
+    
+}
+    
+
+
+@media (max-width: 415px) {
+
+// resize header font
+
+    h1 {
+        font-size: 3.5rem
+    }
+
+ // hide 2 wrestlers (sad face)
+
+    .image1, .image2 {
+        display: none;
+        
+}
+
+    .image5 {
+        top: 15px;
+    }
+
+    .image3 {
+        top: 30px;
+    }
+
+
+}

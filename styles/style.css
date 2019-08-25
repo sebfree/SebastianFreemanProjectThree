@@ -231,6 +231,7 @@ header {
 main {
   height: 80vh;
   padding-top: 130px;
+  overflow: hidden;
 }
 
 .headerTitle {
@@ -261,7 +262,7 @@ form {
   width: 40%;
   height: 50vh;
   border-radius: 10px;
-  padding-top: 20px;
+  padding-top: 10px;
   -webkit-box-shadow: 0 0 15px 20px;
           box-shadow: 0 0 15px 20px;
 }
@@ -344,6 +345,7 @@ input[type=submit] {
   color: #0310ea;
   -webkit-box-shadow: 5px 5px;
           box-shadow: 5px 5px;
+  margin-top: 5px;
 }
 
 input[type=submit]:hover {
@@ -369,5 +371,156 @@ footer {
   font-size: 1.5rem;
   font-family: 'Caveat Brush', cursive;
   color: #7fff00;
-  padding-top: 75px;
+  padding: 50px 0 0 10px;
+}
+
+@media (max-width: 1450px) {
+  .image3 {
+    left: 150px;
+    top: 30px;
+  }
+  .image2 {
+    left: 175px;
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .image3 {
+    left: 100px;
+    top: 30px;
+  }
+  .image2 {
+    left: 150px;
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 1120px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+  .results h2 {
+    font-size: 2.5rem;
+  }
+  .image3 {
+    width: 28%;
+    height: 55%;
+    left: 50px;
+    top: 30px;
+  }
+  .image2 {
+    left: 100px;
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 980px) {
+  h2 {
+    font-size: 3rem;
+  }
+  .image3 {
+    width: 30%;
+    height: 55%;
+    left: 20px;
+    top: 30px;
+  }
+  .image2 {
+    left: 50px;
+    bottom: 0px;
+  }
+  form {
+    width: 55%;
+  }
+}
+
+@media (max-width: 841px) {
+  h1 {
+    font-size: 7rem;
+  }
+  h2 {
+    font-size: 2.7rem;
+  }
+  .legendDiv {
+    font-size: 2.8rem;
+  }
+  .answerDiv {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .results h2 {
+    font-size: 1.8rem;
+  }
+  .image3 {
+    width: 30%;
+    left: 0px;
+    top: 30px;
+  }
+  .image2 {
+    left: 25px;
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 715px) {
+  h1 {
+    font-size: 5rem;
+  }
+  form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 650px) {
+  .image2 {
+    height: 35%;
+  }
+  .image1 {
+    height: 40%;
+  }
+}
+
+@media (max-width: 570px) {
+  form {
+    width: 75%;
+  }
+}
+
+@media (max-width: 515px) {
+  h1 {
+    font-size: 3.8rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  .legendDiv {
+    font-size: 2.5rem;
+  }
+  .image2 {
+    height: 31%;
+    left: 0;
+  }
+  .image1 {
+    height: 35%;
+  }
+  form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 415px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .image1, .image2 {
+    display: none;
+  }
+  .image5 {
+    top: 15px;
+  }
+  .image3 {
+    top: 30px;
+  }
 }
