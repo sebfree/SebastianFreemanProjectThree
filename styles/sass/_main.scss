@@ -164,7 +164,7 @@ fieldset {
 }
 
 input[type=submit]:focus {
-    display: none;
+    outline: none;
 }
 
 // results container

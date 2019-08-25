@@ -356,7 +356,7 @@ input[type=submit]:hover {
 }
 
 input[type=submit]:focus {
-  display: none;
+  outline: none;
 }
 
 .results h2 {
