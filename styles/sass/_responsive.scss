@@ -242,7 +242,7 @@
 // resize header font
 
     h1 {
-        font-size: 3.5rem
+        font-size: 3.5rem;
     }
 
  // hide 2 wrestlers (sad face)
@@ -260,5 +260,14 @@
         top: 30px;
     }
 
+}
+
+@media (max-width: 370px) {
+
+    // resize header font
+    
+        h1 {
+            font-size: 3rem;
+        }
 
 }
