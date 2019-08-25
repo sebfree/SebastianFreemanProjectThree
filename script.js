@@ -20,31 +20,9 @@
 // }
 
 // document ready - load all jquery content on page
-// $(document).on('page:change', function(){
 $(function() {
 
-  
 
-    // myApp.radioValues();
-    // myApp.init();
-
-    // $(`form`).on(`submit`, function(event){
-    //     event.preventDefault();
-
-
-
-    // $(`fieldset`).on(`submit`, function(event){
-    //     event.preventDefault();
-    
-    // })
-
-// const myApp = {};
-
-
-
-// console.log(myScore);
-
-    // console.log(getWrestlerName());
 
 
 });
@@ -58,17 +36,12 @@ $(`form`).on(`submit`, function(event){
     // calculate user score
 
         const radioValue = $(`input[name="answer"]:checked`).val();
-        console.log(radioValue);
         const radioValue1 = $(`input[name="answer1"]:checked`).val();
-        console.log(radioValue1);
         const radioValue2 = $(`input[name="answer2"]:checked`).val();
-        console.log(radioValue2);
         const myScore = parseFloat(radioValue) + parseFloat(radioValue1) + parseFloat(radioValue2);
-        console.log(myScore);
-
 
     // names array
-    const wrestlerNames = ["The Jabrone", "Holay Molay", "Masked Kitten", "Todd Alpain"];
+    const wrestlerNames = ["your name is The Jabrone", "your name is Holay Molay", "your name is Masked Kitten", "your name is Todd Alpain", "Error: Answer the Questions!"];
 
     // name generator logic
 
@@ -81,44 +54,18 @@ $(`form`).on(`submit`, function(event){
             return wrestlerNames[2];
         } else if (myScore === 3){
             return wrestlerNames[3];
-        } 
-
-    }
-
-
-
-    // generate name based on user score
-
-    $(`.results`).html(`<h2 class="Your name is">Your name is ${getWrestlerName()}</h2>`)
-
-});
-
-// error message if radio button not selected (using jqeury validate plugin):
-
-$('#form').validate({
-
-    rules: {
-        answer: { 
-            required: true
-        },
-
-        answer1: { 
-            required: true
-
-        }, 
-        
-        answer2: { 
-            required: true
+        }  else {
+            return wrestlerNames[4];
         }
 
     }
 
-    // messages: {},
-    // errorElement : 'div',
-    // errorLabelContainer: '.results'
 
-    // errorPlacement: '#errors'
+$(`.results`).html(`<h2 class="YourName">${getWrestlerName()}</h2>`)
+
+
 });
+
 
 // remove checked radio buttons upon refresh
 

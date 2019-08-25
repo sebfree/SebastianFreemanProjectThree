@@ -364,3 +364,10 @@ input[type=submit]:hover {
           box-shadow: 0 0 15px 20px;
   margin-top: 30px;
 }
+
+footer {
+  font-size: 1.5rem;
+  font-family: 'Caveat Brush', cursive;
+  color: #7fff00;
+  padding-top: 75px;
+}
