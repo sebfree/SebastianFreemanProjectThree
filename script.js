@@ -85,13 +85,42 @@ $(`form`).on(`submit`, function(event){
 
     }
 
+
+
     // generate name based on user score
 
     $(`.results`).html(`<h2 class="Your name is">Your name is ${getWrestlerName()}</h2>`)
 
 });
 
-// remove checked radio buttons upoin refresh
+// error message if radio button not selected (using jqeury validate plugin):
+
+$('#form').validate({
+
+    rules: {
+        answer: { 
+            required: true
+        },
+
+        answer1: { 
+            required: true
+
+        }, 
+        
+        answer2: { 
+            required: true
+        }
+
+    }
+
+    // messages: {},
+    // errorElement : 'div',
+    // errorLabelContainer: '.results'
+
+    // errorPlacement: '#errors'
+});
+
+// remove checked radio buttons upon refresh
 
 $('input[type="radio"]').prop('checked', false); 
 
