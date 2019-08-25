@@ -163,6 +163,10 @@ fieldset {
 
 }
 
+input[type=submit]:focus {
+    display: none;
+}
+
 // results container
 
 .results h2 {

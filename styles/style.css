@@ -355,6 +355,10 @@ input[type=submit]:hover {
   transition: all 1s;
 }
 
+input[type=submit]:focus {
+  display: none;
+}
+
 .results h2 {
   font-size: 3rem;
   margin: 0 auto;
